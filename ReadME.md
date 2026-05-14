@@ -1,4 +1,6 @@
-# Операторно-параметрические схемы модели "Прибор-Мастер"
+# Операторно-параметрические схемы модели «Прибор-Мастер»
+
+---
 
 ## Трек ПРИБОР
 
@@ -29,14 +31,14 @@ flowchart LR
   e11@{ curve: natural}
   e20@{ curve: stepAfter}
 
-  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px;
-  classDef state fill:#9e8,stroke:#333,stroke-width:1px;
+  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px,color:#111;
+  classDef state fill:#9e8,stroke:#333,stroke-width:1px,color:#111;
   class h5,h2,h7 state;
   class h1,h3,h4,h6 cond;
-  style title fill:yellow,stroke:red;
-  style par1 fill:#fcc,stroke:#111,stroke-width:2px;
-  style par2 fill:#fae,stroke:#bbb,stroke-width:2px;
-  style par4 fill:#ccc,stroke:#555,stroke-width:2px;
+  style title fill:yellow,stroke:red,color:#111;
+  style par1 fill:#fcc,stroke:#111,stroke-width:2px,color:#111;
+  style par2 fill:#fae,stroke:#bbb,stroke-width:2px,color:#111;
+  style par4 fill:#ccc,stroke:#555,stroke-width:2px,color:#111;
   linkStyle 0 stroke:red,stroke-width:4px;
 
   click par2 href "https://iu5.bmstu.ru" "переход для Мастера" _blank
@@ -69,16 +71,16 @@ flowchart LR
 
   e30@{ curve: stepBefore}
 
-  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px;
-  classDef state fill:#9e8,stroke:#333,stroke-width:1px;
-  classDef navig fill:#eda,stroke:#333,stroke-width:1px;
+  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px,color:#111;
+  classDef state fill:#9e8,stroke:#333,stroke-width:1px,color:#111;
+  classDef navig fill:#eda,stroke:#333,stroke-width:1px,color:#111;
   class h12,h14,h16,h17 state;
   class h11,h13 cond;
   class h15 navig;
-  style title2 fill:yellow,stroke:red;
-  style par1b fill:#fcc,stroke:#111,stroke-width:2px;
-  style par2b fill:#fae,stroke:#bbb,stroke-width:2px;
-  style par4b fill:#ccc,stroke:#555,stroke-width:2px;
+  style title2 fill:yellow,stroke:red,color:#111;
+  style par1b fill:#fcc,stroke:#111,stroke-width:2px,color:#111;
+  style par2b fill:#fae,stroke:#bbb,stroke-width:2px,color:#111;
+  style par4b fill:#ccc,stroke:#555,stroke-width:2px,color:#111;
 
   click par2b href "https://iu5.bmstu.ru" "переход для Мастера" _blank
   click par4b href "https://iu5.bmstu.ru" "параметр Трем" _blank
@@ -86,7 +88,7 @@ flowchart LR
 
 ---
 
-## Объединённая ОПС "Ремонт Прибора" (Прибор + Мастер)
+## Объединённая ОПС «Ремонт Прибора» (Прибор + Мастер)
 
 ```mermaid
 flowchart TD
@@ -136,17 +138,17 @@ flowchart TD
   e20@{ curve: stepAfter}
   e30@{ curve: stepBefore}
 
-  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px;
-  classDef state fill:#9e8,stroke:#333,stroke-width:1px;
-  classDef navig fill:#eda,stroke:#333,stroke-width:1px;
+  classDef cond fill:#bee,stroke:#aaa,stroke-width:1px,color:#111;
+  classDef state fill:#9e8,stroke:#333,stroke-width:1px,color:#111;
+  classDef navig fill:#eda,stroke:#333,stroke-width:1px,color:#111;
   class h5,h2,h7,h12,h14,h16,h17 state;
   class h1,h3,h4,h6,h11,h13 cond;
   class h15 navig;
-  style par1 fill:#fcc,stroke:#111,stroke-width:2px;
-  style par2 fill:#fae,stroke:#bbb,stroke-width:2px;
-  style par4 fill:#ccc,stroke:#555,stroke-width:2px;
-  style par1b fill:#fcc,stroke:#111,stroke-width:2px;
-  style par2b fill:#fae,stroke:#bbb,stroke-width:2px;
+  style par1 fill:#fcc,stroke:#111,stroke-width:2px,color:#111;
+  style par2 fill:#fae,stroke:#bbb,stroke-width:2px,color:#111;
+  style par4 fill:#ccc,stroke:#555,stroke-width:2px,color:#111;
+  style par1b fill:#fcc,stroke:#111,stroke-width:2px,color:#111;
+  style par2b fill:#fae,stroke:#bbb,stroke-width:2px,color:#111;
   linkStyle 0 stroke:red,stroke-width:4px;
 
   click par2 href "https://iu5.bmstu.ru" "переход для Мастера" _blank
